@@ -10,5 +10,4 @@ console.log ( jsonObj.name);
 console.log ( jsonObj.job);
 
 var jsonToString = JSON.stringify(obj);
-
 console.log ( jsonToString);
