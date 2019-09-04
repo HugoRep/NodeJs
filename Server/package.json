@@ -8,5 +8,8 @@
     "start": "node index.js"
   },
   "author": "hugo",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "supervisor": "^0.12.0"
+  }
 }
