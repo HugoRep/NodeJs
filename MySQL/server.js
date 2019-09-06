@@ -10,12 +10,9 @@ client.connect();
 
 client.query('SELECT * FROM mall.orderinfo' , function(err , result , fields){
     
-    if( err)
-    {
+    if( err){
         console.log ( err );
-    }
-    else
-    {
+    }else{
         console.log ( result ) ;
         for(var key in result )
         {

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>게시판 글쓰기</title>
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+    <style>
+        textarea:disabled {background:#fff}
+    </style>
+    <body>
+        <fieldset style="width:40%;">
+            <legend>글보기</legend>
+            <table>
+                <tr>
+                    <td>제목</td>
+                    <td><input type="text" name="title" id="" value = "<%= data.title %>" ></td>
+                </tr>
+                <tr>
+                    <td>내용</td>
+                    <td>
+                        <textarea name="content" disabled><%= data.content %></textarea>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td><input type="button" value="돌아가기" onclick="location.href='http://localhost:3000/board'"></td>
+                </tr>
+            </table>
+            
+        </fieldset>
+    </body>
+</html>
